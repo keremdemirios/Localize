@@ -14,6 +14,7 @@
 		416A09EB2AB7791100CEC7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 416A09EA2AB7791100CEC7B7 /* Assets.xcassets */; };
 		416A09EE2AB7791100CEC7B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 416A09EC2AB7791100CEC7B7 /* LaunchScreen.storyboard */; };
 		416A09F72AB7796300CEC7B7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 416A09F92AB7796300CEC7B7 /* Localizable.strings */; };
+		416A0A012AB77DCB00CEC7B7 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416A0A002AB77DCB00CEC7B7 /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		416A09FD2AB7797400CEC7B7 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		416A09FE2AB7797400CEC7B7 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		416A09FF2AB7797400CEC7B7 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		416A0A002AB77DCB00CEC7B7 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				416A09EA2AB7791100CEC7B7 /* Assets.xcassets */,
 				416A09EC2AB7791100CEC7B7 /* LaunchScreen.storyboard */,
 				416A09EF2AB7791100CEC7B7 /* Info.plist */,
+				416A0A002AB77DCB00CEC7B7 /* Extension+String.swift */,
 			);
 			path = Localize;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416A0A012AB77DCB00CEC7B7 /* Extension+String.swift in Sources */,
 				416A09E62AB7790D00CEC7B7 /* ViewController.swift in Sources */,
 				416A09E22AB7790D00CEC7B7 /* AppDelegate.swift in Sources */,
 				416A09E42AB7790D00CEC7B7 /* SceneDelegate.swift in Sources */,

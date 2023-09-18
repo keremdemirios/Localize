@@ -9,15 +9,36 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var buttonSignUp: UIButton!
+    lazy var button:UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Sign Up".localized(), for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
+        button.layer.cornerRadius = 12
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let signUp = NSLocalizedString("Sign Up", comment: "This is a sign up button.")
-        buttonSignUp.setTitle(signUp, for: .normal)
+        view.backgroundColor = .white
+        configureUI()
     }
-
-
+    
+    func configureUI(){
+        view.addSubview(button)
+        NSLayoutConstraint.activate([
+            button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            button.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            button.widthAnchor.constraint(equalToConstant: 150),
+            button.heightAnchor.constraint(equalToConstant: 40)
+        ])
+    }
+    
+    @objc func buttonClicked(){
+        print("Working")
+    }
 }
 
